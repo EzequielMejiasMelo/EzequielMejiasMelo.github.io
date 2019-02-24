@@ -1,0 +1,184 @@
+/** Global **/
+
+body {
+    font: 15px/1.5 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family:
+}
+
+h1 {
+    color: firebrick;
+}
+
+/** Header **/
+
+header {
+    background-color: darkgrey;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #name {
+    float: left;
+    padding-left: 30px;
+}
+
+header #name h1 {
+    margin: 0;
+    color: white;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+/** Showcase **/
+
+.showcase {
+    background-image: url(../Images/showcase.jpg);
+    background-size: cover;
+    background-origin: inherit;
+    background-position: 0 -200px;
+    min-height: 400px;
+
+}
+
+.showcase h2 {
+    color: firebrick;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    object-position: 0 -400px;
+    margin: 0;
+    padding-top: 130px;
+    padding-bottom: 0;
+}
+
+.showcase p {
+    font-size: 20px;
+    padding-top: 0;
+}
+
+/** blog posts **/
+
+section {
+    text-align: center;
+    background-color: white;
+    padding: 0;
+}
+
+section h1 {
+    font-size: 30px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+section h2 {}
+
+.blog h1 {
+    color: black;
+}
+
+#box {
+    margin-top: 20px;
+    float: left;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+
+}
+
+#box img {
+    width: 200px;
+    object-position: left;
+
+}
+
+/** me header **/
+
+#me h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    object-position: 0 -400px;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+#me p {
+    font-size: 20px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+/** Bio **/
+
+.bio img {
+    width: 30%;
+    padding: 20px;
+}
+
+#coding img {
+    width: 20%;
+}
+
+/** resume header**/
+
+#resume {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+}
+
+/*** resume ***/
+
+.pdf img {
+    width: 100%
+}
+
+/*** My Info ***/
+
+.info {
+    font-size: 20px;
+    
+    
+}
+
+/*** footer ***/
+
+footer {
+
+    text-align: center;
+    background-color: ;
+    color: ;
+}
+
+footer a {
+    text-decoration: ;
+    text-transform: capitalize;
+    color: black;
+}
