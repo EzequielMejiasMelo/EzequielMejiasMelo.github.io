@@ -97,26 +97,33 @@ section h1 {
     margin-bottom: 0;
 }
 
-section h2 {}
-
-.blog h1 {
-    color: black;
+.intro {
+    padding: 1% 1% 1% 1%;
 }
 
-#box {
-    margin-top: 20px;
-    float: left;
-    text-align: center;
-    width: 100%;
-    padding: 10px;
-    background-color: white;
-
+#button {
+    
 }
 
-#box img {
-    width: 200px;
-    object-position: left;
+/*media*/
 
+#video1 {
+    padding: 0;
+    align-content: center;
+}
+
+.audio {
+    padding: 0 20% 0 20%;
+}
+
+.svg {
+    padding: 0 20% 0 20%;
+}
+
+/*construction*/
+
+.bulldozer {
+    padding-top: 5%;
 }
 
 /** me header **/
@@ -147,25 +154,11 @@ section h2 {}
     width: 20%;
 }
 
-/** resume header**/
-
-#resume {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 60px;
-}
-
-/*** resume ***/
-
-.pdf img {
-    width: 100%
-}
-
 /*** My Info ***/
 
 .info {
     font-size: 20px;
-    
-    
+
 }
 
 /*** footer ***/

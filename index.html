@@ -20,7 +20,7 @@
                 <ul>
                     <li><a href="index.html">Welcome</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="resume.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -32,33 +32,49 @@
         <p>I'm Ezequiel Mejias Melo and attached are just some of the things I have accomplished as a Software Engineering major at FGCU.</p>
     </section>
 
-    <section class="blog">
+    <section class="media">
         <div>
-            <h1>Just a few articles I find interesting</h1>
-            <div id="box">
-                <h2>Coding</h2>
-                <img src="Images/LastMile.png">
-                <p><a href="https://chanzuckerberg.com/newsroom/innovative-coding-program-expands-opportunities-for-women-incarcerated-in-oklahoma/">Innovative Coding Program Expands Opportunities for Women Incarcerated in Oklahoma</a></p>
+            <h1 class="intro">Intro</h1>
+            <div class="video">
+                <div id= "button"><button onclick="playPause()">Play/Pause</button></div>
+                <video id="video1" width="500">
+                    <source src="Images/portfolio_video.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
             </div>
-            <div id="box">
-                <h2>Gaming</h2>
-                <img src="Images/Console.jpg">
-                <p><a href="https://www.nytimes.com/2019/02/20/business/video-game-controllers-disabilities.html">Adaptive Video Game Controllers Open Worlds for Gamers With Disabilities</a></p>
+            <div class="audio">
+                <audio controls>
+                    <source src="Images/portfolio.m4a" type="audio/mpeg">
+                    Your browser does not support this audio element.
+                </audio>
             </div>
-            <div id="box">
-                <h2>Tech</h2>
-                <img src="Images/heartrate.png">
-                <p><a href="https://9to5mac.com/2019/02/23/apple-watch-expedite-diagnosis/">Apple Watch detects A-fib in Texas woman, doctor says it greatly expedited diagnosis</a></p>
+            <div class="svg">
+                <svg>
+                    <text x="50" y="30" fill= "firebrick">Explore the rest of my site.</text>
+                </svg>
+
             </div>
         </div>
     </section>
-    
+
     <hr>
-    
+
     <footer>
         <h3><a href="https://www.linkedin.com/in/ezequiel-mejias-melo-605180169/">Connect with me on LinkedIn</a></h3>
         <p>Ezequiel Melo, 2019</p>
     </footer>
+
+    <script>
+        var myVideo = document.getElementById("video1");
+
+        function playPause() {
+            if (myVideo.paused)
+                myVideo.play();
+            else
+                myVideo.pause();
+        }
+
+    </script>
 </body>
 
 </html>
