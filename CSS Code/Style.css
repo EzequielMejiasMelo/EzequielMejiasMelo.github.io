@@ -120,6 +120,10 @@ section h1 {
     padding: 0 20% 0 20%;
 }
 
+.canvas {
+    padding: 0;
+}
+
 /*construction*/
 
 .bulldozer {

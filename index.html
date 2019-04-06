@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
     <meta charset="utf-8">
@@ -50,9 +50,11 @@
             </div>
             <div class="svg">
                 <svg>
-                    <text x="50" y="30" fill= "firebrick">Explore the rest of my site.</text>
+                    <text x="50" y="50" fill= "firebrick">Explore the rest of my site.</text>
                 </svg>
-
+            </div>
+            <div class="canvas">
+                <canvas id="myCanvas" width="200" height="100">Your browser does not support the HTML5 canvas tag.</canvas>
             </div>
         </div>
     </section>
@@ -73,7 +75,12 @@
             else
                 myVideo.pause();
         }
-
+        
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.fillText("Thank you!",10,50);
+        
     </script>
 </body>
 
