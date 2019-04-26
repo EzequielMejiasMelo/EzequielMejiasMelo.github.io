@@ -36,7 +36,7 @@
         <div>
             <h1 class="intro">Intro</h1>
             <div class="video">
-                <div id= "button"><button onclick="playPause()">Play/Pause</button></div>
+                <div id="button"><button onclick="playPause()">Play/Pause</button></div>
                 <video id="video1" width="500">
                     <source src="Images/portfolio_video.mp4" type="video/mp4">
                     Your browser does not support HTML5 video.
@@ -50,7 +50,7 @@
             </div>
             <div class="svg">
                 <svg>
-                    <text x="50" y="50" fill= "firebrick">Explore the rest of my site.</text>
+                    <text x="50" y="50" fill="firebrick">Explore the rest of my site.</text>
                 </svg>
             </div>
             <div class="canvas">
@@ -67,6 +67,7 @@
     </footer>
 
     <script>
+        //Video element
         var myVideo = document.getElementById("video1");
 
         function playPause() {
@@ -75,13 +76,10 @@
             else
                 myVideo.pause();
         }
-        
+        // Canvas element
         var c = document.getElementById("myCanvas");
         var ctx = c.getContext("2d");
         ctx.font = "30px Arial";
-        ctx.fillText("Thank you!",10,50);
-        
+        ctx.fillText("Thank you!", 10, 50);
     </script>
-</body>
-
-</html>
+</body></html>
