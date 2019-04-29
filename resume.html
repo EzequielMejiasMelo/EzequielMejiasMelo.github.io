@@ -34,10 +34,15 @@
     <section class="pdf">
         <p><a href="Images/fields.pdf">Fields Report</a> - This is an essay defining and differentiating computer science and software engineering.
     </section>
+    <section class="cipher">
+        <p>Caesar Cipher - This is a method to encode text. Input some text and it will be encoded. Check it out below!</p>
+        <form>
+            Type what you want to encode here! ---><input type="text" id="cipherText">
+            Now decide the key for this cipher between 1 and 26! ---><input type="number" min="1" max="26" id="cipherKey">
+            <input type='button' value="Cipher" onclick="caesarCipher()">
+        </form>
+        <p id="encodedText"></p>
 
-    <section class="bulldozer">
-        <h2>This page is currently being worked on. There will be lots more to come.</h2>
-        <img src="Images/bulldozer.png" width="40%" height="40%" alt="Bulldozer">
     </section>
 
     <hr>
@@ -46,6 +51,34 @@
         <h2><a href="https://www.linkedin.com/in/ezequiel-mejias-melo-605180169/">Connect with me on LinkedIn</a></h2>
         <p>Ezequiel Melo, 2019</p>
     </footer>
-</body>
 
-</html>
+    <script>
+        //Caesar Cipher code
+        var cipherText = document.getElementById("cipherText");
+        var cipherKey = document.getElementById("cipherKey")
+        var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+        var newString = '';
+
+        function caesarCipher() {
+            var lowerCaseCipher = cipherText.toLowerCase();
+            var key = parseInt(cipherKey);
+
+            for (var i = 0; i < lowerCaseCipher.length; i++) {
+                var currentLetter = lowerCaseCipher[i];
+                if (currentLetter === ' ') {
+                    newString += currentLetter;
+                    continue;
+                }
+                var currentIndex = alphabet.indexOf(currentLetter);
+                var newIndex = currentIndex + key;
+                if (newIndex > 25) newIndex = newIndex - 26;
+                if (newIndex < 0) newIndex = newIndex + 26;
+                if(lowerCaseCipher[i] === cipherText[i].toUpperCase()){
+                    newString += alphabet[newIndex].toUpperCase();
+                } 
+                else newString += alphabet[newIndex];
+            }
+            document.getElementById("encodedText") = newString;
+        }
+    </script>
+</body></html>
