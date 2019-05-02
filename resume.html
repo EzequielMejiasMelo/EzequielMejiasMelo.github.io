@@ -44,6 +44,10 @@
         <p id="encodedText"></p>
 
     </section>
+    <section class="scratch">
+        <p><a href="https://scratch.mit.edu/projects/284051413/">Scratch Game</a> - I created a card game in Scratch. Scratch is a block-based visual programming language. You can use it to create online projects like games or stories. Check it out by clicking the link!</p>
+        <img src="Images/scratch.png" alt="Cards on a board" width="30%" height="30%">
+    </section>
 
     <hr>
 
@@ -56,15 +60,18 @@
         //Caesar Cipher code
 
         function caesarCipher() {
+            //Input
             var inVar = document.getElementById("cipherText").value;
             var outVar = "";
             var key = document.getElementById("cipherKey").value;
+
             key = parseInt(key);
-            
-            for(var i = 0; i < inVar.length; i++) {
-                outVar = outVar + String.fromCharCode(inVar.charCodeAt(i) - key);
+            //Processing
+            for (var i = 0; i < inVar.length; i++) {
+                outVar = outVar + String.fromCharCode(inVar.charCodeAt(i) + key);
             }
-            
+
+            //Output
             document.getElementById("encodedText").innerHTML = outVar;
         }
     </script>

@@ -17,10 +17,6 @@ ul {
     padding: 0;
 }
 
-@font-face {
-    font-family:
-}
-
 h1 {
     color: firebrick;
 }
@@ -176,12 +172,9 @@ section h1 {
 footer {
 
     text-align: center;
-    background-color: ;
-    color: ;
 }
 
 footer a {
-    text-decoration: ;
     text-transform: capitalize;
     color: black;
 }
