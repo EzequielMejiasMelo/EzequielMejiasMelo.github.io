@@ -1,85 +1,130 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <!--- Title --->
-    <title>Ezequiel Melo | Welcome</title>
-    <link rel="stylesheet" href="CSS%20Code/Style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Ezequiel Melo</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
 </head>
 
 <body>
-    <header>
-        <div>
-            <div id="name">
-                <h1>Ezequiel Melo - Student</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Welcome</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top portfolio-navbar gradient" style="background-color: #2a2f34;background-image: url(&quot;/assets/img/#2a2f34.png&quot;);background-size: cover;background-repeat: repeat;height: 88px;">
+        <div class="container"><a class="navbar-brand logo" href="#" style="font-family: Lato, sans-serif;">Ezequiel Melo</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/cv.html">Resume</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="project-page.html">Projects</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/contact.html">Contact</a></li>
                 </ul>
-            </nav>
         </div>
-    </header>
-
-    <section class="showcase">
-        <h2>Hello!</h2>
-        <p>I'm Ezequiel Mejias Melo and attached are just some of the things I have accomplished as a Software Engineering major at FGCU.</p>
-    </section>
-
-    <section class="media">
-        <div>
-            <h1 class="intro">Intro</h1>
-            <div class="video">
-                <div id="button"><button onclick="playPause()">Play/Pause</button></div>
-                <video id="video1" width="500">
-                    <source src="Images/portfolio_video.mp4" type="video/mp4">
-                    Your browser does not support HTML5 video.
-                </video>
-            </div>
-            <div class="audio">
-                <audio controls>
-                    <source src="Images/portfolio.mp3" type="audio/mpeg">
-                    Your browser does not support this audio element.
-                </audio>
-            </div>
-            <div class="svg">
-                <svg>
-                    <text x="50" y="50" fill="firebrick">Explore the rest of my site.</text>
-                </svg>
-            </div>
-            <div class="canvas">
-                <canvas id="myCanvas" width="200" height="100">Your browser does not support the HTML5 canvas tag.</canvas>
-            </div>
         </div>
-    </section>
-
-    <hr>
-
-    <footer>
-        <h2><a href="https://www.linkedin.com/in/ezequiel-mejias-melo-605180169/">Connect with me on LinkedIn</a></h2>
-        <p>Ezequiel Melo, 2019</p>
+    </nav>
+    <main class="page lanidng-page">
+        <!-- Start: Showcase -->
+        <section style="background-image: url(&quot;/assets/img/showcase.jpg&quot;);background-size: cover;background-repeat: no-repeat;">
+            <section class="portfolio-block block-intro" style="background-image: url(&quot;none&quot;);background-size: cover;background-repeat: space;">
+                <div class="container" style="margin-top: 100px;">
+                    <div class="about-me" style="padding-top: 100px;">
+                        <p style="padding-top: 100;">Software Engineering major @ FGCU. Attached are merely some of the things I have accomplished or plan to accomplish.</p><a class="btn btn-outline-primary" role="button" href="/contact.html">Contact Me</a></div>
+                </div>
+            </section>
+        </section>
+        <!-- End: Showcase -->
+        <!-- Start: About -->
+        <section class="portfolio-block website gradient" style="background-image: url(&quot;none&quot;);background-color: #232c34;">
+            <div class="container">
+                <h3>About Me</h3>
+                <p>Hey, I'm Ezequiel. I've been interested in technology for as long as I can remember. Currently I am a Technician II, Operations at Chico's FAS, Inc. Although it does not have to do with programming directly I took this postion to gain
+                    experience with different teams. I pride myself on my communication skills and my ability to collaberate even with diverse teams. I've been working with some of my classmates and close friends to make the sometimes challenging process
+                    of becoming an engineer easier.</p>
+            </div>
+            <div class="row" style="color: rgba(255,255,255,0);">
+                <div class="col-md-4">
+                    <div class="card special-skill-item border-0" style="background-color: rgba(255,255,255,0);">
+                        <div class="card-body">
+                            <h3 class="card-title" style="color: #ffffff;">Programming Languages</h3>
+                            <ul style="color: #ffffff;">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card special-skill-item border-0" style="background-color: rgba(255,255,255,0);">
+                        <div class="card-body" style="background-color: rgba(255,255,255,0);">
+                            <h3 class="text-center card-title" style="color: #ffffff;">Interests</h3>
+                            <ul style="color: #ffffff;">
+                                <li>Mathematics</li>
+                                <li>Gaming</li>
+                                <li>Community Work</li>
+                                <li>Software Development (obviously)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card special-skill-item border-0" style="background-color: rgba(255,255,255,0);">
+                        <div class="card-body">
+                            <h3 class="card-title" style="color: #ffffff;">Misc</h3>
+                            <ul style="color: #ffffff;">
+                                <li>Coding in Vi isn't that bad</li>
+                                <li>I hate clowns</li>
+                                <li>I'm not afraid to look dumb</li>
+                                <li>My guilty pleasure is Hall &amp; Oates</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End: About -->
+        <section class="portfolio-block skills">
+            <div class="container">
+                <h3>Things I Plan to Accomplish</h3>
+                <ul>
+                    <li>Hone my programming ability</li>
+                    <li>Learn Java/C++</li>
+                    <li>Start more projects
+                        <ul>
+                            <li>Front end development</li>
+                            <li>Databases</li>
+                            <li>Data Visualization</li>
+                            <li>Machine Learning</li>
+                        </ul>
+                    </li>
+                    <li>Making minute popcorn in 45 seconds</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer" style="background-color: #212529;">
+        <div class="container">
+            <!-- Start: Footer Icon -->
+            <div class="social-icons" style="color: rgb(255,255,255);"><a href="https://github.com/EzequielMejiasMelo" style="background-color: rgb(255,255,255);"><i class="fa fa-github" style="color: #212529;"></i></a><a href="https://www.linkedin.com/in/ezequiel-mejias-melo-605180169" style="background-color: #ffffff;"><i class="icon ion-social-linkedin" style="color: #212529;"></i></a>
+                <a
+                    href="/contact.html" style="background-color: #ffffff;"><i class="icon ion-android-mail" style="color: #212529;"></i></a>
+            </div>
+            <!-- End: Footer Icon -->
+            <!-- Start: Footer Links -->
+            <div class="links" style="color: rgb(255,255,255);"><a href="/cv.html" style="color: rgb(255,255,255);">Resume</a><a href="/projects-grid-cards.html" style="background-color: rgba(255,255,255,0);color: rgb(255,255,255);">Projects</a><a href="/contact.html" style="color: rgb(255,255,255);">Contact me</a></div>
+            <!-- End: Footer Links -->
+        </div>
     </footer>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="/assets/js/theme.js"></script>
+</body>
 
-    <script>
-        //Video element
-        var myVideo = document.getElementById("video1");
-
-        function playPause() {
-            if (myVideo.paused)
-                myVideo.play();
-            else
-                myVideo.pause();
-        }
-        // Canvas element
-        var c = document.getElementById("myCanvas");
-        var ctx = c.getContext("2d");
-        ctx.font = "30px Arial";
-        ctx.fillText("Thank you!", 10, 50);
-    </script>
-</body></html>
+</html>
